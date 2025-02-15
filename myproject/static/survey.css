@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+    background-image:url(survey.jpg);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+form {
+    width:50%;
+    height: 50%;
+    background:transparent;
+    position: absolute;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 0px;
+    font-size: 16px;
+    color:#ffff;
+    padding: 20px 45px 20px 20px;
+}
+
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align labels and inputs horizontally */
+}
+
+.question label {
+    flex: 1;
+    color: #333;
+    font-weight: bold;
+}
+
+.question input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #ae1189; 
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #880b41; 
+}

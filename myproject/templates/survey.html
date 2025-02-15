@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Level Prediction Survey</title>
+    <link rel="stylesheet" href="../static/survey.css">
+</head>
+<body>
+    <h1>Stress Level Prediction Survey</h1> 
+    <form action="/survey" method="post">  <div class="question">
+            <label for="Angry_level">Angry_level (0-20):</label>
+            <input type="number" id="Angry_level" name="Angry_level" min="0" max="20" required>
+        </div>
+        <div class="question">
+            <label for="situation_understand_ability">situation_understand_ability (0-5):</label>
+            <input type="number" id="situation_understand_ability" name="situation_understand_ability" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="nervousness">nervousness (0-25):</label>
+            <input type="number" id="nervousness" name="nervousness" min="0" max="25" required>
+        </div>
+        <div class="question">
+            <label for="headache">Headache (0-7):</label>
+            <input type="number" id="headache" name="headache" min="0" max="7" required>
+        </div>
+        <div class="question">
+            <label for="sleep_quality">Sleep Quality (0-7):</label>
+            <input type="number" id="sleep_quality" name="sleep_quality" min="0" max="7" required>
+        </div>
+        <div class="question">
+            <label for="breathing_problem">Breathing Problem (0-5):</label>
+            <input type="number" id="breathing_problem" name="breathing_problem" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="living_conditions">Living Conditions (0-5):</label>
+            <input type="number" id="living_conditions" name="living_conditions" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="academic_performance">Academic Performance (0-5):</label>
+            <input type="number" id="academic_performance" name="academic_performance" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="study_load">Study Load (0-5):</label>
+            <input type="number" id="study_load" name="study_load" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="future_career_concerns">Future Career Concerns (0-5):</label>
+            <input type="number" id="future_career_concerns" name="future_career_concerns" min="0" max="5" required>
+        </div>
+        <div class="question">
+            <label for="extracurricular_activities">Extracurricular Activities (0-5):</label>
+            <input type="number" id="extracurricular_activities" name="extracurricular_activities" min="0" max="5" required>
+        </div>
+        <div class="links">
+            <button type="submit">Predict</button>  </form>
+    </form>
+</body>
+</html>

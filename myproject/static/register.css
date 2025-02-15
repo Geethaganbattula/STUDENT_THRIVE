@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(home2.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: rgba(187, 171, 171, 0.7); /* Adjust the alpha value (last parameter) for transparency */
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(136, 124, 124, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .btn-rounded-rect {
+    background-color: #63e01b; /* Blue background */
+    border: none;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adjust padding for desired width/height */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    border-radius: 5px; /* Adjust for corner roundness */
+    /* Remove fixed width and height */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-rounded-rect:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Optional icon styling - if you have an icon inside */
+  .btn-rounded-rect i {
+    margin-right: 5px; /* Space between icon and text */
+  }

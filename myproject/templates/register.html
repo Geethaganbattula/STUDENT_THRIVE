@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparent Registration Form</title>
+<link rel="stylesheet" href="../static/register.css">
+
+</head>
+<body>
+<div class="container">
+  <h2>Register</h2>
+  <form  name="submit-to-google-sheet">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="Username" required>
+    </div>
+    <div class="f
+    </div>orm-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="Password" required>
+    </div>
+    <div class="links">
+  
+      <a  class ="btn-rounded-rect " href="./login" >Register</a>
+  </form>
+</div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby4aHo92osayYgw61SRTnq4kI6mRFLcMzdDJkPA7ucca9gRWh0EKimGyMgczhXsQmI0tg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
